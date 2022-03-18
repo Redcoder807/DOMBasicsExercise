@@ -37,3 +37,18 @@ aTag.insertAdjacentElement(`afterend`, h5)
 
 const li = document.querySelector(`li`);
 li.remove();
+
+// Bonus
+const divs = document.querySelectorAll(`div`);
+
+for(d of divs){
+    d.classList.toggle(`background`)
+}
+
+const avengers = ["Forever", "Fight", "As", "One", "AVENGERS", "ASSEMBLE!"];
+
+for (item of avengers){
+    const newSpan = document.createElement(`span`)
+    newSpan.innerText = item;
+    body.insertAdjacentElement(`beforeend`, newSpan)
+}
